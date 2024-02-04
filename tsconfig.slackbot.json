@@ -1,0 +1,14 @@
+{
+  "extends": "@tsconfig/node16/tsconfig.json",
+  "compilerOptions": {
+    "preserveConstEnums": true,
+    "outDir": "dist",
+    "noImplicitAny": false,
+    "paths": {
+      "@/*": ["/*"],
+      "libs/*": ["./libs/*"]
+    }
+  },
+  "include": ["index.ts"],
+  "exclude": ["node_modules", ".next", "**/*.spec.ts"]
+}
